@@ -13,6 +13,9 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 openai.api_base = "https://models.inference.ai.azure.com"
 
 def module(request, number):
+    print(os.environ.get("OPENAI_API_KEY"))
+    print(os.environ.get("OPENAI_API_KEY"))
+    print(os.environ.get("OPENAI_API_KEY"))
     if request.method == 'POST':
         form = GoalsForm(request.POST)
         if form.is_valid():
